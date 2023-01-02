@@ -1,0 +1,38 @@
+{
+  "schemaVersion": 1,
+  "id": "antichatemojis",
+  "version": "${version}",
+
+  "name": "Anti Chat Emojis",
+  "description": "Prevents auto conversion of ascii emotes like :) to an emoji by inserting zero width non-joiners",
+  "authors": [
+    "fml42"
+  ],
+  "contact": {
+    "homepage": "https://2n.cx/",
+    "sources": "https://github.com/fml42/antichatemojis"
+  },
+
+  "license": "CC0-1.0",
+  "icon": "assets/antichatemojis/icon.png",
+
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "net.fml42.antichatemojis.AntiChatEmojis"
+    ]
+  },
+  "mixins": [
+    "antichatemojis.mixins.json"
+  ],
+
+  "depends": {
+    "fabricloader": ">=0.14.11",
+    "fabric-api": "*",
+    "minecraft": "~1.19.3",
+    "java": ">=17"
+  },
+  "suggests": {
+    "another-mod": "*"
+  }
+}
